@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 120px;
+}
+
+header div  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ 
+}
+
+header div img {
+  max-width: 50%;
+ 
+
+}
+
+header div h2 {
+  text-align: center;
+  margin-left: 20px;
+}
