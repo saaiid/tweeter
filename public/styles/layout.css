@@ -3,14 +3,8 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-
- 
-
-
-
-html {
+ html {
   box-sizing: border-box;
-  --nav-height: 120px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -25,10 +19,6 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
 }
 
@@ -36,45 +26,23 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-/*  main {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+main {
+  margin: auto;
   background-color: #f4f1ec;
- } */
-
- main {
   width: 90%;
-  height: 300px;
-  background: #ffffff;
-  /* align-items: center; */
-/*   margin: auto;
-  padding: 100px 0 70px 0;
-  margin-top: 150px; */
- }
+}
 
- #tweet-container {
+#tweet-container {
   width: 100%;
-  margin: 60px 0 0 0;
- }
+}
 
- #tweet-text {
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid black;
-  margin-bottom: 30px;
-  height: 50px;
- }
-
- .tweet-author-avatar {
-  height: 100px;
-  width: 100px;
- }
-
- .tweet {
-  width: 100%;
- }
+@media (min-width: 850px) {
+  main {
+    margin: 120px 50px 50px 50px;
+    width: 50vw;
+    float: right;
+  }
+}
 
 
 
