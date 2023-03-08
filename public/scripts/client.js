@@ -38,6 +38,7 @@ $(document).ready(function () {
 
   // renders tweets by looping through array
   const renderTweets = function (tweetArr) {
+    $(".tweet-container").empty()
     for (const tweet of tweetArr) {
       const $tweet = createTweetElement(tweet);
       $(".tweet-container").prepend($tweet);
