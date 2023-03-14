@@ -45,42 +45,47 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span class="logo">tweeter</span>
-    <div id="compose-new">
-      <span class="nav-tweet">Write a new tweet</br>
-        <button style=" background-color: transparent;" type="button">
-          <div class="double-down"><i class="fas fa-angle-double-down"></i></div>
-        </button>
+    <span class="nav-text">tweeter</span>
+
+    <div class="btn-scroll">
+      <a href="#" class="btn-text" title="Compose-Tweeet">
+        <!-- compose new tweet button -->
+        <span class="btn-bold">Write</span> a new tweet
+        <br>
+        <i class="double-down"><i class="fas fa-angle-double-down"></i></div>
+      </a>
     </div>
-    </span>
   </nav>
 
-  <header>
-    <div>
-      <img src="/images/profile-hex.png">
-    </div>
+  <header class="header-container">
+    <div><img src="/images/profile-hex.png"></div>
     <br>
     <h2>Ema Jones</h2>
-    <div>
-
-    </div>
   </header>
 
-  <!-- Page-specific (main) content here -->
+  <!-- Page main content -->
   <main class="container">
-    <section class="new-tweet">
-      <h2>Compose Tweet</h2>
-      <form id="submit-form" method="POST" action="/tweets/">
-        <div id="tooLong"><span>&#9888;</span>Too long, Plz respect our arbitrary limit of 140 chars</div>
-        <div id="noText"><span>&#9888;</span>Oops! It looks like you didn't type anything!</div>
-        <textarea name="text" id="tweet-text" rows="1" placeholder="What are you humming about?"></textarea>
-        <button id="submit-tweet" type="submit">Tweet</button>
-        <output name="counter" class="counter" for="tweet-text">140</output>
+    <!-- error container for validation error messages -->
+    <section class="error-container">
+      <i class="fas fa-exclamation-trianle "></i>  
+    </section>
+
+    <!-- container for tweet input box -->
+    <section class="newtweet-container">
+      <form method="post" action="/tweets" class="newtweet-form">
+        <div>
+          <textarea class="form-textarea" name="text" placeholder="what are you huming about?"></textarea>
+          <div>
+            <input type="submit" value="Tweeet" class="form-input">
+            <span class="counter">140</span>
+          </div>
+        </div>
       </form>
     </section>
-    <!-- jQuery loads submitted tweets below -->
-    <section class="tweet-container">
-    </section>
+
+    <div class="round-btn">
+      <i class="round-btn_icon fas fa-angle-double-up"></i>
+    </div>
   </main>
 </body>
 

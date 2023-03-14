@@ -1,66 +1,51 @@
-#new-tweet {
+.newtweet-form {
   width: 100%;
-  margin-top: 50px;
-  display: none;
+  padding: 10px;
+  background-color: #f4f1ec;
+  margin: 50px 0px;
 }
 
-#new-tweet {
-  padding: 15px;
-  background-color: #F36060;
-  color: #FFFFFF;
-  border-radius: 25px;
-  display: none;
-  text-align: center;
-  margin-top: 0px;
+.form-textarea {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  display: block;
+  border: none;
+  border-bottom: 4px solid #545149;
+  background-color: #f4f1ec;
+  margin: 0;
+  outline: none;
+  overflow: auto;
+  resize: none;
 }
 
-#tooLong {
-  border: 2px solid red;
-  color: red;
-  display: none;
+.form-textarea::placeholder {
+  color: #545149;
+  opacity: 1;
+  font-weight: 600;
+  font-size: 25px;
 }
 
-#noText {
-  border: 2px solid red;
-  color: red;
-  display: none;
+.form-input {
+  color: #000;
+  font-family: 'Bunge', cursive;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  border: none;
+  background-color: #4056A1;
+  text-decoration: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: .8em;
 }
 
 .counter {
-  margin-top: 5px;
-  float: right;
-  font-family: 'Bungee', sans-serif;
-}
-
-/* .negative {
-  color: red;
-} */
-
-.error {
-  color: red;
+  font-family: 'Bunge', cursive;
+  font-size: 1m;
+  margin-right: 8px;
+  margin-top: .6em;
 }
 
 
-button {
-  font-family: 'Bungee', cursive;
-  display: inline-block;
-  background-color: #4056A1;
-  color: #FFFFFF;
-  margin-top: 8px;
-}
 
-textarea {
-  display: block;
-  width: 100%;
-  border: hidden;
-  background-color: #F4F1EC;
-  resize: none;
-  color: #545149;
-  border-bottom-style: solid;
-  border-width: thick;
-}
-
-textarea::placeholder {
-  color: #545149;
-  opacity: 10;
-}
